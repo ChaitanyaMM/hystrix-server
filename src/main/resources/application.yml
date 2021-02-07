@@ -1,0 +1,13 @@
+hystrix:
+  dashboard:
+    proxyStreamAllowList: '*'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+server:
+  port: 8070
+
+ 
